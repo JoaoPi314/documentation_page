@@ -17,35 +17,35 @@
             <header class="header-section">
                 <h2>Hello World</h2>
             </header>
-            <p>
-                Python is a very simple language, and has a very straightforward syntax. It encourages programmers to program without boilerplate (prepared) code. The simplest directive in Python is the "print" directive - it simply prints out a line (and also includes a newline, unlike in C).
-            </p>
-            <p>
-                There are two major Python versions, Python 2 and Python 3. Python 2 and 3 are quite different. This tutorial uses Python 3, because it more semantically correct and supports newer features.
-            </p>
-            <p>
-                For example, one difference between Python 2 and 3 is the print statement. In Python 2, the "print" statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function, and must be invoked with parentheses.
-            </p>
-            <p>
-                To print a string in Python 3, just write:
-            </p>
-            <pre>
-                <code class="code-block">
+                <p>
+                    Python is a very simple language, and has a very straightforward syntax. It encourages programmers to program without boilerplate (prepared) code. The simplest directive in Python is the "print" directive - it simply prints out a line (and also includes a newline, unlike in C).
+                </p>
+                <p>
+                    There are two major Python versions, Python 2 and Python 3. Python 2 and 3 are quite different. This tutorial uses Python 3, because it more semantically correct and supports newer features.
+                </p>
+                <p>
+                    For example, one difference between Python 2 and 3 is the print statement. In Python 2, the "print" statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function, and must be invoked with parentheses.
+                </p>
+                <p>
+                    To print a string in Python 3, just write:
+                </p>
+                <pre>
+                    <code class="code-block">
     print('Hello, world!')
-                </code>
-            </pre>
+                    </code>
+                </pre>
 
             <h3>Indentation</h3>
-            <p>
-                Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard indentation requires standard Python code to use four spaces. For example:
-            </p>
-            <pre>
-                <code class="code-block">
+                <p>
+                    Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard indentation requires standard Python code to use four spaces. For example:
+                </p>
+                <pre>
+                    <code class="code-block">
     x = 1
     if x == 1:
         print('Hello, World!')
-                </code>
-            </pre>
+                    </code>
+                </pre>
 
 
 
@@ -56,8 +56,122 @@
             <header class="header-section">
                 <h2>Variables and Types</h2>
             </header>
+                <p>
+                    Python is completely object oriented, and not "statically typed". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object.
+                </p>
+                <p>
+                    This tutorial will go over a few basic types of variables.
+                </p>
 
-        
+            <h3>Numbers</h3>
+
+                <p>
+                    Python supports two types of numbers - integers(whole numbers) and floating point numbers(decimals). (It also supports complex numbers, which will not be explained in this tutorial).
+                </p>
+                <p>
+                    To define an integer, use the following syntax:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    myint = 7
+    print(myint)
+                    </code>
+                </pre>       
+                
+                <p>
+                    To define a floating point number, you may use one of the following notations:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    myfloat = 7.0
+    print(myfloat)
+    myfloat = float(7)
+    print(myfloat)
+                    </code>
+                </pre>    
+
+            <h3>Strings</h3>
+                <p>
+                    Strings are defined either with a single quote or a double quotes.
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    mystring = 'hello'
+    print(mystring)
+    mystring = "hello"
+    print(mystring)
+                    </code>
+                </pre>   
+                
+                <p>
+                    The difference between the two is that using double quotes makes it easy to include apostrophes (whereas these would terminate the string if using single quotes)
+                </p>
+       
+                <pre>
+                    <code class="code-block">
+    mystring = "Don't worry about apostrophes"
+    print(mystring)
+                    </code>
+                </pre>   
+
+                <p>
+                    There are additional variations on defining strings that make it easier to include things such as carriage returns, backslashes and Unicode characters. These are beyond the scope of this tutorial, but are covered in the <a href="https://docs.python.org/3/tutorial/introduction.html#strings" target="_blank">Python documentation.</a>
+                </p>
+                <p>
+                    Simple operators can be executed on numbers and strings:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    one = 1
+    two = 2
+    three = one + two
+    print(three)
+    
+    hello = "hello"
+    world = "world"
+    helloworld = hello + " " + world
+    print(helloworld)
+                    </code>
+                </pre>  
+                
+                <p>
+                    Assignments can be done on more than one variable "simultaneously" on the same line like this
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    a, b = 3, 4
+    print(a,b)
+                    </code>
+                </pre>  
+
+                <p>
+                    Mixing operators between numbers and strings is not supported:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    # This will not work!
+    one = 1
+    two = 2
+    hello = "hello"
+    
+    print(one + two + hell  o)
+                    </code>
+                </pre>  
+        </section>
+
+        <!--3-->
+        <section class="main-section" id="Lists">
+            <header class="header-section">
+                <h2>Lists</h2>
+            </header>
+
+
         </section>
     </main>
 
