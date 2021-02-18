@@ -171,7 +171,135 @@
                 <h2>Lists</h2>
             </header>
 
+                <p>
+                    Lists are very similar to arrays. They can contain any type of variable, and they can contain as many variables as you wish. Lists can also be iterated over in a very simple manner. Here is an example of how to build a list.
+                </p>
+                <pre>
+                    <code class="code-block">
+    mylist = []
+    mylist.append(1)
+    mylist.append(2)
+    mylist.append(3)
+    print(mylist[0]) # prints 1
+    print(mylist[1]) # prints 2
+    print(mylist[2]) # prints 3
+    
+    # prints out 1,2,3
+    for x in mylist:
+        print(x)
+                    </code>
+                </pre>   
 
+                <p>
+                    Accessing an index which does not exist generates an exception (an error).
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    mylist = [1,2,3]
+    print(mylist[10])
+                    </code>
+                </pre>
+                
+        </section>
+
+        <!--4-->
+        <section class="main-section" id="Basic_Operators">
+            <header class="header-section">
+                <h2>Basic Operators</h2>
+            </header>
+                <p>
+                    This section explains how to use basic operators in Python.
+                </p>
+            
+            <h3>Arithmetic Operators</h3>
+               
+                <p>
+                    Just as any other programming languages, the addition, subtraction, multiplication, and division operators can be used with numbers.
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    number = 1 + 2 * 3 / 4.0
+    print(number)
+                    </code>
+                </pre>
+
+                <p>
+                    Try to predict what the answer will be. Does python follow order of operations?
+                </p>
+                <p>
+                    Another operator available is the modulo (%) operator, which returns the integer remainder of the division. dividend % divisor = remainder.
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    remainder = 11 % 3
+    print(remainder)
+                    </code>
+                </pre>
+
+                <p>
+                    Using two multiplication symbols makes a power relationship.
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    squared = 7 ** 2
+    cubed = 2 ** 3
+    print(squared)
+    print(cubed)
+                    </code>
+                </pre>
+            
+            <h3>Using Operators with Strings</h3>
+
+                <p>
+                    Python supports concatenating strings using the addition operator:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    helloworld = "hello" + " " + "world"
+    print(helloworld)
+                    </code>
+                </pre>
+
+                <p>
+                    Python also supports multiplying strings to form a string with a repeating sequence:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    lotsofhellos = "hello" * 10
+    print(lotsofhellos)
+                    </code>
+                </pre>
+
+            <h3>Using Operators with Lists</h3>
+                
+                <p>
+                    Lists can be joined with the addition operators:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    even_numbers = [2,4,6,8]
+    odd_numbers = [1,3,5,7]
+    all_numbers = odd_numbers + even_numbers
+    print(all_numbers)
+                    </code>
+                </pre>
+                
+                <p>
+                    Just as in strings, Python supports forming new lists with a repeating sequence using the multiplication operator:
+                </p>
+
+                <pre>
+                    <code class="code-block">
+    print([1,2,3] * 3)
+                    </code>
+                </pre>
         </section>
     </main>
 
