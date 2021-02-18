@@ -6,32 +6,36 @@
 
 p{
     text-align: justify;
+    white-space: normal;
 }
 
-body{
-    
+body{    
     font-family: 'Open Sans', Arial, sans-serif;
     background-color: #e3e3e3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
     color: #202020;
+    display: flex;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 0.7fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
+body, #navbar, #main-doc{
+    border-bottom: 0;
+    min-height: 50px; /* min-height instead of height */
+    overflow: auto;
 }
+
 
 #navbar{
+    flex: 0 1 30vw;
     display: flex;
     flex-direction: column;
-    grid-area: 1/1/4/2;
-
+    
 }
 
 #header-doc{
     font-size: 1.2em;
-    margin: 0;
     padding: 20px;
     padding-right: 0;
     border-style: solid;
@@ -42,7 +46,6 @@ body{
 .nav-link{
     font-size: 1.2em;
     color: #202020;
-    margin: 0;
     padding: 20px;
     border-style: solid;
     border-width: 1px;
@@ -50,6 +53,9 @@ body{
 }
 
 #main-doc{
-    grid-area: 1/2/4/4;
+    flex: 1 1 70vw;
+}
+
+.main-section{
 }
 
